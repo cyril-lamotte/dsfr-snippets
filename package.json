@@ -10,6 +10,7 @@
     "name": "Cyril Lamotte",
     "email": "clamotte@luminess.eu"
   },
+  "publisher": "Cyril Lamotte",
   "repository": {
     "type": "git",
     "url": "https://github.com/cyril-lamotte/snippets-dsfr"
@@ -23,6 +24,7 @@
     "DSFR",
     "snippets"
   ],
+  "preview": true,
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
