@@ -1,0 +1,62 @@
+{
+  "DSFR Accordéon - Accordion": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrAccordion",
+    "body": [
+      "<!--",
+      "  Créer un groupe d'accordéon en insérant les accordéons dans : '<div class=\"fr-accordions-group\"></div>'",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon",
+      "-->",
+      "<section class=\"fr-accordion\">",
+      "  <h3 class=\"fr-accordion__title\">",
+      "    <button class=\"fr-accordion__btn\" aria-expanded=\"false\" aria-controls=\"accordion-${2:UNIQUE_ID}\">Intitulé accordéon</button>",
+      "  </h3>",
+      "  <div class=\"fr-collapse\" id=\"accordion-${2}\">",
+      "    <!-- Contenu -->",
+      "  </div>",
+      "</section>"
+    ],
+    "description": "Insérer un Accordéon"
+  },
+
+  "DSFR Bouton - Button": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrButton",
+    "body": [
+      "<!--",
+      "  Tailles : fr-btn--sm fr-btn--lg",
+      "  Icône seulement : Ne pas insérer de classe 'fr-btn--icon-left'",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton",
+      "-->",
+      "<button class=\"fr-btn${1| , fr-btn--secondary, fr-btn--tertiary, fr-btn--tertiary-no-outline|}${2| , fr-btn--icon-left fr-icon-checkbox-circle-line|}\">${0:Label}</button>",
+    ],
+    "description": "Insérer un bouton"
+  },
+
+  "DSFR Alerte - Alert": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrAlert",
+    "body": [
+      "<!--",
+      "  Tailles : fr-alert--sm",
+      "  Ajouter ce code avant la balise fermante pour insérer un bouton de fermeture",
+      "  <button class=\"fr-btn--close fr-btn\" title=\"Masquer le message\" onclick=\"const alert = this.parentNode; alert.parentNode.removeChild(alert)\">Masquer le message</button>",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte",
+      "-->",
+      "<div class=\"fr-alert fr-alert--${1|error,success,warning,info|}\">",
+      "  <h3 class=\"fr-alert__title\">Erreur : titre du message</h3>",
+      "  <p>Description</p>",
+      "</div>",
+    ],
+    "description": "Insérer une alerte"
+  },
+}
