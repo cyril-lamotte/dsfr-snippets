@@ -7,7 +7,7 @@ https://www.systeme-de-design.gouv.fr/
 
 - Snippets HTML des composants DSFR.
 
-![Démo avec un bouton](images/dsfr-input-anim.gif)
+![Démo avec un bouton](images/button.gif)
 
 ## Problèmes connus
 
