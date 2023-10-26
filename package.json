@@ -1,5 +1,5 @@
 {
-  "name": "snippets-dsfr",
+  "name": "dsfr-snippets",
   "displayName": "DSFR Snippets",
   "description": "Snippets pour le Design System Français",
   "version": "1.0.0",
@@ -10,6 +10,12 @@
     "name": "Cyril Lamotte",
     "email": "clamotte@luminess.eu"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyril-lamotte/snippets-dsfr"
+  },
+  "license": "MIT",
+  "icon": "images/dsfr-snippets.png",
   "categories": [
     "Snippets"
   ],
