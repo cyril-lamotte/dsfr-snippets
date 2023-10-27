@@ -19,7 +19,6 @@
       "  </div>",
       "</section>"
     ],
-    "description": "Insérer un Accordéon"
   },
 
   "DSFR Bouton - Button": {
@@ -36,7 +35,6 @@
       "-->",
       "<button class=\"fr-btn${1| , fr-btn--secondary, fr-btn--tertiary, fr-btn--tertiary-no-outline|}${2| , fr-btn--icon-left fr-icon-checkbox-circle-line|}\">${0:Label}</button>",
     ],
-    "description": "Insérer un bouton"
   },
 
   "DSFR Alerte - Alert": {
@@ -57,6 +55,52 @@
       "  <p>Description</p>",
       "</div>",
     ],
-    "description": "Insérer une alerte"
+  },
+
+  "DSFR Badge - Badge": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrBadge",
+    "body": [
+      "<!--",
+      "  Tailles : fr-badge--sm",
+      "  Couleurs : fr-badge--green-menthe, .fr-badge--brown-caramel, .fr-badge--purple-glycine",
+      "  Icône : fr-badge--success, fr-badge--error, fr-badge--info, fr-badge--warning, fr-badge--new",
+      "  Sans icône : fr-badge--no-icon",
+      "  Groupe de badges :",
+      "  <ul class=\"fr-badge-group\">",
+      "    <li><p class=\"fr-badge fr-badge--success\">Label badge</p></li>",
+      "    <li><p class=\"fr-badge fr-badge--blue-ecume\">Label badge</p></li>",
+      "  </ul>",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge",
+      "-->",
+      "<p class=\"fr-badge ${1|fr-badge--success,fr-badge--error,fr-badge--info,fr-badge--warning,fr-badge--new|}\">${2:Label badge}</p>"
+    ],
+  },
+
+  "DSFR Bandeau d'information importante - Notice": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrNotice",
+    "body": [
+      "<!--",
+      "  Ajouter ce code avant la balise fermante pour insérer un bouton de fermeture",
+      "  <button class=\"fr-btn--close fr-btn\" title=\"Masquer le message\" onclick=\"const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)\">Masquer le message</button>",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bandeau-d-information-importante",
+      "-->",
+      "<div class=\"fr-notice fr-notice--info\">",
+      "  <div class=\"fr-container\">",
+      "    <div class=\"fr-notice__body\">",
+      "      <p class=\"fr-notice__title\">",
+      "        ${1:Titre du bandeau}",
+      "      </p>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
   },
 }
