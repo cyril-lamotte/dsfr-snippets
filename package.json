@@ -2,7 +2,7 @@
   "name": "dsfr-snippets",
   "displayName": "DSFR Snippets",
   "description": "Snippets pour le Design System Français",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.82.0"
   },
