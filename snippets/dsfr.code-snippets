@@ -1,5 +1,5 @@
 {
-  "DSFR Accordéon - Accordion": {
+  "Accordéon - Accordion": {
     "scope": [
       "html",
       "twig",
@@ -21,7 +21,7 @@
     ],
   },
 
-  "DSFR Bouton - Button": {
+  "Bouton - Button": {
     "scope": [
       "html",
       "twig",
@@ -32,12 +32,14 @@
       "  Tailles : fr-btn--sm fr-btn--lg",
       "  Icône seulement : Ne pas insérer de classe 'fr-btn--icon-left'",
       "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton",
+      "  Voir aussi les groupes de boutons :",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons",
       "-->",
       "<button class=\"fr-btn${1| , fr-btn--secondary, fr-btn--tertiary, fr-btn--tertiary-no-outline|}${2| , fr-btn--icon-left fr-icon-checkbox-circle-line|}\">${0:Label}</button>",
     ],
   },
 
-  "DSFR Alerte - Alert": {
+  "Alerte - Alert": {
     "scope": [
       "html",
       "twig",
@@ -57,7 +59,7 @@
     ],
   },
 
-  "DSFR Badge - Badge": {
+  "Badge - Badge": {
     "scope": [
       "html",
       "twig",
@@ -80,7 +82,7 @@
     ],
   },
 
-  "DSFR Bandeau d'information importante - Notice": {
+  "Bandeau d'information importante - Notice": {
     "scope": [
       "html",
       "twig",
@@ -103,4 +105,58 @@
       "</div>"
     ],
   },
+
+  "Ajout de fichier - Upload": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrUpload",
+    "body": [
+      "<!--",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/ajout-de-fichier",
+      "-->",
+      "<div class=\"fr-upload-group\">",
+      "  <label class=\"fr-label\" for=\"file-upload\">Ajouter des fichiers",
+      "    <span class=\"fr-hint-text\">Taille maximale : 500 Mo. Formats supportés : jpg, png, pdf. Plusieurs fichiers possibles. Lorem ipsum dolor sit amet, consectetur adipiscing.</span>",
+      "  </label>",
+      "  <input class=\"fr-upload\" type=\"file\" id=\"file-upload\" name=\"file-upload\">",
+      "</div>"
+    ],
+  },
+
+  "Champ de saisie - Input": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrInput",
+    "body": [
+      "<!--",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/champ-de-saisie",
+      "-->",
+      "<div class=\"fr-input-group\">",
+      "  <label class=\"fr-label\" for=\"${1:name}\">",
+      "    ${0:Label}",
+      "  </label>",
+      "  <input class=\"fr-input\" type=\"text\" id=\"${1:name}\" name=\"${1:name}\">",
+      "</div>"
+    ],
+  },
+
+  "Lien - Link": {
+    "scope": [
+      "html",
+      "twig",
+    ],
+    "prefix": "DsfrLink",
+    "body": [
+      "<!--",
+      "  Tailles : fr-link--sm, fr-link--lg",
+      "  @see https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien",
+      "-->",
+      "<a class=\"fr-link fr-icon-arrow-right-line fr-link--icon-right\" href=\"#\">${0:Label}</a>"
+    ],
+  },
+
 }
